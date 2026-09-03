@@ -1,0 +1,151 @@
+import calibrationEnsemble from "@/data/reports/calibration_ensemble_siglip_eva02.json";
+import calibrationSiglip from "@/data/reports/calibration_siglip_so400m.json";
+import conformal from "@/data/reports/conformal.json";
+import ensemble from "@/data/reports/ensemble.json";
+import ensembleWithFinetune from "@/data/reports/ensemble_with_finetune.json";
+import finetuneResult from "@/data/reports/eva02_ft_result.json";
+import probeDinov2 from "@/data/reports/probe_dinov2_large.json";
+import probeEva02 from "@/data/reports/probe_eva02_large.json";
+import probeFusion from "@/data/reports/probe_fusion_siglip_eva02.json";
+import probeSiglip from "@/data/reports/probe_siglip_so400m.json";
+
+/**
+ *  Everything the public and admin pages render comes from the JSON the evaluation
+ *  scripts actually wrote.
+ */
+
+export type ProbeReport = {
+  name: string;
+  backbones: string[];
+  arch: string;
+  params: number;
+  train_samples: number;
+  val_top1: number;
+  val_top5: number;
+  test_top1: number;
+  test_top5: number;
+  best_epoch: number;
+  minutes: number;
+  num_classes: number;
+};
+
+export type EnsembleRow = {
+  members: string[];
+  method: string;
+  weights: number[];
+  test_top1: number;
+  test_top5: number;
+  val_top1?: number;
+};
+
+export type McNemar = {
+  a_only: number;
+  b_only: number;
+  p: number;
+  significant: boolean;
+};
+
+export type CalibrationBin = {
+  bin: string;
+  count: number;
+  confidence: number;
+  accuracy: number;
+  gap: number;
+};
+
+export type CalibrationReport = {
+  name: string;
+  members: string[] | null;
+  temperature: number;
+  val_samples: number;
+  test_samples: number;
+  test_before: {
+    top1: number;
+    ece: number;
+    mce: number;
+    brier: number;
+    nll: number;
+    mean_confidence: number;
+    bins: CalibrationBin[];
+  };
+  test_after: CalibrationReport["test_before"];
+};
+
+export type ConformalRow = {
+  alpha: number;
+  target_coverage: number;
+  [method: string]: unknown;
+};
+
+export const probes: ProbeReport[] = [
+  probeSiglip as ProbeReport,
+  probeEva02 as ProbeReport,
+  probeDinov2 as ProbeReport,
+  probeFusion as ProbeReport,
+];
+
+export const ensembleReport = ensemble as unknown as {
+  members: string[];
+  n_test: number;
+  n_val: number;
+  results: EnsembleRow[];
+  best: EnsembleRow;
+  mcnemar: Record<string, McNemar>;
+  agreement: {
+    oracle_top1: number;
+    all_wrong: number;
+    pairs: Record<
+      string,
+      {
+        both_correct: number;
+        only_first: number;
+        only_second: number;
+        both_wrong: number;
+        shared_error_rate: number;
+      }
+    >;
+  };
+};
+
+/** The sweep that includes the fine-tuned model. */
+export const ensembleWithFinetuneReport = ensembleWithFinetune as unknown as typeof ensembleReport;
+
+export const finetune = finetuneResult as unknown as {
+  test_top1: number;
+  test_top5: number;
+  history: { stage: string; epoch: number; size: number; val_top1: number; ema_top1: number; minutes: number }[];
+};
+
+export const calibration = {
+  ensemble: calibrationEnsemble as unknown as CalibrationReport,
+  siglip: calibrationSiglip as unknown as CalibrationReport,
+};
+
+export const conformalReport = conformal as unknown as {
+  members: string[];
+  temperature: number;
+  calibration_samples: number;
+  test_samples: number;
+  results: ConformalRow[];
+};
+
+/** Display name for a backbone key. */
+export const BACKBONE_LABELS: Record<string, string> = {
+  siglip_so400m: "SigLIP-SO400M",
+  eva02_large: "EVA-02-L",
+  dinov2_large: "DINOv2-L",
+  eva02_ft: "EVA-02-L (fine-tuned)",
+  fusion_siglip_eva02: "Gated fusion head",
+};
+
+export function labelFor(key: string): string {
+  return BACKBONE_LABELS[key] ?? key;
+}
+
+/**
+ *  The single headline number, derived rather than restated so it cannot drift from the
+ *  ensemble sweep that produced it.
+ */
+export function headlineAccuracy(): number {
+  return ensembleReport.best.test_top1;
+}

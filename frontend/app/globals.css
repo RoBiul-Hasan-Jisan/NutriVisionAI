@@ -1,239 +1,345 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@custom-variant dark (&:is(.dark *));
+/* FoodGenome AI — professional design system.
+   A clean, data-forward SaaS interface: neutral surfaces, one confident
+   brand color (teal) for actions and emphasis, a warm amber accent used
+   sparingly, and calm semantic colors for status. No decorative print
+   effects, no character illustration — the content carries the page. */
+
+@theme {
+  --color-ink: #0f172a;
+  --color-newsprint: #ffffff;
+
+  --color-red: #0f766e; /* primary brand (teal) — kept as --color-red so every
+                             existing component that reads var(--color-red)
+                             for its accent picks up the new brand color. */
+  --color-red-deep: #0b5a54;
+  --color-blue: #2563eb; /* secondary / informational */
+  --color-blue-deep: #1d4ed8;
+  --color-cyan: #0891b2;
+  --color-amber: #d97706; /* warning / highlight accent */
+  --color-green: #16a34a; /* success */
+
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+
+  --ease-snap: cubic-bezier(0.2, 0.9, 0.1, 1);
+  --ease-overshoot: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
 
 :root {
-  /* Dark neon theme - always active */
-  --background: #0f172a;
-  --foreground: #f0f4f8;
-  --card: #1e293b;
-  --card-foreground: #f0f4f8;
-  --popover: #1e293b;
-  --popover-foreground: #f0f4f8;
-  --primary: #a78bfa;
-  --primary-foreground: #0f172a;
-  --secondary: #60a5fa;
-  --secondary-foreground: #0f172a;
-  --muted: #334155;
-  --muted-foreground: #94a3b8;
-  --accent: #c084fc;
-  --accent-foreground: #0f172a;
-  --destructive: #ef4444;
-  --destructive-foreground: #0f172a;
-  --border: #334155;
-  --input: #1e293b;
-  --ring: #a78bfa;
-  --chart-1: #a78bfa;
-  --chart-2: #60a5fa;
-  --chart-3: #38bdf8;
-  --chart-4: #c084fc;
-  --chart-5: #d946ef;
-  --radius: 0.625rem;
-  --sidebar: #1e293b;
-  --sidebar-foreground: #f0f4f8;
-  --sidebar-primary: #a78bfa;
-  --sidebar-primary-foreground: #0f172a;
-  --sidebar-accent: #60a5fa;
-  --sidebar-accent-foreground: #0f172a;
-  --sidebar-border: #334155;
-  --sidebar-ring: #a78bfa;
+  /* Semantic surface tokens. Everything downstream reads these. */
+  --page: #f7f8fa;
+  --panel: #ffffff;
+  --line: #e4e7ec;
+  --text: #0f172a;
+  --text-dim: #64748b;
+  --halftone: transparent;
+
+  --primary: #0f766e;
+  --primary-hover: #0b5a54;
+  --primary-tint: rgba(15, 118, 110, 0.08);
+  --accent: #d97706;
+  --accent-tint: rgba(217, 119, 6, 0.1);
+
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 8px 24px -8px rgba(15, 23, 42, 0.14);
+  --shadow-lg: 0 24px 48px -16px rgba(15, 23, 42, 0.22);
+
+  --dur-instant: 90ms;
+  --dur-snap: 160ms;
+  --dur-panel: 220ms;
+
+  color-scheme: light;
 }
 
-@theme inline {
-  --font-sans: 'Inter', sans-serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
-  --font-syne: 'Syne', sans-serif;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  html {
-    @apply bg-background;
-  }
-  body {
-    @apply bg-background text-foreground;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #0a0f1a;
+    --panel: #11182a;
+    --line: #232c40;
+    --text: #e7ecf5;
+    --text-dim: #93a0b7;
+    --halftone: transparent;
+    --primary: #14b8a6;
+    --primary-hover: #2dd4bf;
+    --primary-tint: rgba(20, 184, 166, 0.12);
+    --accent: #f0983c;
+    --accent-tint: rgba(240, 152, 60, 0.14);
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 12px 28px -10px rgba(0, 0, 0, 0.55);
+    --shadow-lg: 0 28px 56px -18px rgba(0, 0, 0, 0.65);
+    color-scheme: dark;
   }
 }
 
-@layer components {
-  /* Glassmorphism effect - premium layered */
-  .glass {
-    @apply bg-white/[0.07] backdrop-blur-xl border border-white/20 shadow-xl;
-  }
+/* An explicit theme choice must win over the media query in both directions. */
+:root[data-theme="light"] {
+  --page: #f7f8fa;
+  --panel: #ffffff;
+  --line: #e4e7ec;
+  --text: #0f172a;
+  --text-dim: #64748b;
+  --primary: #0f766e;
+  --primary-hover: #0b5a54;
+  --primary-tint: rgba(15, 118, 110, 0.08);
+  --accent: #d97706;
+  --accent-tint: rgba(217, 119, 6, 0.1);
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 8px 24px -8px rgba(15, 23, 42, 0.14);
+  --shadow-lg: 0 24px 48px -16px rgba(15, 23, 42, 0.22);
+  color-scheme: light;
+}
 
-  .glass-sm {
-    @apply bg-white/[0.05] backdrop-blur-lg border border-white/10;
-  }
+:root[data-theme="dark"] {
+  --page: #0a0f1a;
+  --panel: #11182a;
+  --line: #232c40;
+  --text: #e7ecf5;
+  --text-dim: #93a0b7;
+  --primary: #14b8a6;
+  --primary-hover: #2dd4bf;
+  --primary-tint: rgba(20, 184, 166, 0.12);
+  --accent: #f0983c;
+  --accent-tint: rgba(240, 152, 60, 0.14);
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 12px 28px -10px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 28px 56px -18px rgba(0, 0, 0, 0.65);
+  color-scheme: dark;
+}
 
-  .glass-lg {
-    @apply bg-white/[0.08] backdrop-blur-2xl border border-white/20 shadow-2xl;
-  }
+* {
+  border-color: var(--line);
+}
 
-  /* Neon glow border */
-  .neon-border {
-    @apply border border-primary/50 shadow-[0_0_20px_rgba(167,139,250,0.3)];
-  }
+body {
+  background: var(--page);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
 
-  .neon-border-blue {
-    @apply border border-secondary/50 shadow-[0_0_20px_rgba(96,165,250,0.3)];
-  }
+::selection {
+  background: var(--primary-tint);
+  color: var(--text);
+}
 
-  /* Neon text glow */
-  .neon-text {
-    @apply text-primary drop-shadow-[0_0_10px_rgba(167,139,250,0.5)];
-  }
+/* ── Cards / panels ─────────────────────────────────────────────────────
+   Flat surface, a hairline border, a soft ambient shadow. No offset, no
+   hard edges — depth reads from blur and opacity, not displacement. */
 
-  .neon-text-blue {
-    @apply text-secondary drop-shadow-[0_0_10px_rgba(96,165,250,0.5)];
-  }
+@utility panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--dur-panel) var(--ease-snap), border-color var(--dur-panel) var(--ease-snap);
+}
 
-  /* Smooth gradient background */
-  .gradient-bg {
-    @apply bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950;
-  }
+@utility panel-tight {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow-xs);
+}
 
-  /* Floating animation */
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-  }
+@utility panel-raised {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+}
 
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
-  }
+@utility panel-flat {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
 
-  /* Pulse glow effect */
-  @keyframes pulse-glow {
-    0%, 100% { 
-      box-shadow: 0 0 20px rgba(167, 139, 250, 0.3);
-    }
-    50% { 
-      box-shadow: 0 0 40px rgba(167, 139, 250, 0.6);
-    }
-  }
+/* The plain edge for buttons, inputs, badges and chips — a hairline border
+   with a barely-there shadow that lifts a touch on hover. */
+@utility ink-edge {
+  border: 1px solid color-mix(in srgb, currentColor 16%, var(--line));
+  border-radius: 10px;
+  box-shadow: var(--shadow-xs);
+  transition: box-shadow var(--dur-panel) var(--ease-snap), transform var(--dur-snap) var(--ease-snap),
+    filter var(--dur-snap) ease;
+}
 
-  .animate-pulse-glow {
-    animation: pulse-glow 3s ease-in-out infinite;
+@media (hover: hover) {
+  a.ink-edge:hover,
+  button.ink-edge:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+    filter: brightness(1.03);
   }
+}
 
-  /* Smooth glow on hover */
-  @keyframes glow-hover {
-    0% { box-shadow: 0 0 20px rgba(167, 139, 250, 0.2); }
-    100% { box-shadow: 0 0 40px rgba(167, 139, 250, 0.4); }
+a.ink-edge:active,
+button.ink-edge:active {
+  transform: translateY(0);
+  filter: brightness(0.98);
+}
+
+/* Legacy halftone hooks — kept as no-ops so components that still pass the
+   class name render cleanly instead of with a texture. */
+@utility halftone {
+  background-image: none;
+}
+@utility halftone-shade {
+  background: radial-gradient(120% 140% at 100% 0%, var(--primary-tint), transparent 55%);
+}
+@utility halftone-fade {
+  position: relative;
+}
+
+@utility panel-tilt-l {
+  transform: none;
+}
+@utility panel-tilt-r {
+  transform: none;
+}
+
+@utility web-corner {
+  position: relative;
+}
+
+@utility speed-lines {
+  position: relative;
+}
+
+@utility ink-split {
+  text-shadow: none;
+}
+
+/* A confident, uppercase mini-label used for pill badges and SFX-style
+   numerals — no outline stroke, no drop shadow, just weight and color. */
+@utility sfx-burst {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--primary);
+}
+
+@utility caption-box {
+  background: var(--primary-tint);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--primary);
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+@utility gutter-rule {
+  height: 1px;
+  background: var(--line);
+  box-shadow: none;
+}
+
+/* Tabular figures are mandatory wherever nutrition numbers align. */
+@utility figures {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+@utility sfx {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+/* ── Motion ─────────────────────────────────────────────────────────────
+   Quiet and purposeful: a fade with a short rise, nothing that overshoots
+   or rotates. */
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-
-  /* Shimmer effect */
-  @keyframes shimmer {
-    0% { background-position: -1000px 0; }
-    100% { background-position: 1000px 0; }
+  to {
+    opacity: 1;
+    transform: none;
   }
+}
 
-  .animate-shimmer {
-    animation: shimmer 3s infinite;
+@keyframes impact {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
   }
-
-  /* Neon button styles */
-  .btn-neon {
-    @apply relative px-6 py-2.5 font-medium rounded-lg border border-primary/50 text-primary bg-primary/10 hover:bg-primary/20 transition-all duration-200 shadow-[0_0_20px_rgba(167,139,250,0.2)] hover:shadow-[0_0_30px_rgba(167,139,250,0.5)];
+  to {
+    opacity: 1;
+    transform: none;
   }
+}
 
-  .btn-neon-secondary {
-    @apply relative px-6 py-2.5 font-medium rounded-lg border border-secondary/50 text-secondary bg-secondary/10 hover:bg-secondary/20 transition-all duration-200 shadow-[0_0_20px_rgba(96,165,250,0.2)] hover:shadow-[0_0_30px_rgba(96,165,250,0.5)];
+@utility animate-panel-in {
+  animation: panel-in var(--dur-panel) var(--ease-snap) both;
+}
+
+@utility animate-impact {
+  animation: impact var(--dur-panel) var(--ease-snap) both;
+}
+
+@utility animate-snap {
+  animation: panel-in var(--dur-panel) var(--ease-snap) both;
+}
+
+/* Focus rings: a clean two-layer ring that reads on any surface. */
+:where(a, button, [tabindex], input, summary, select):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Motion sensitivity is a real accessibility need. Reduced mode keeps opacity
+   fades and drops every transform, parallax and auto-motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
+}
 
-  /* Primary button */
-  .btn-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-medium rounded-xl transition-all duration-200 shadow-lg shadow-purple-600/30 hover:shadow-purple-600/50 disabled:opacity-50 disabled:cursor-not-allowed;
+/* ── Dish photographs ───────────────────────────────────────────────────
+   A gentle zoom on hover, nothing else — the photograph does the work. */
+.dish-thumb img {
+  transition: transform var(--dur-panel) var(--ease-snap);
+}
+a:hover .dish-thumb img {
+  transform: scale(1.04);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dish-thumb img,
+  a:hover .dish-thumb img {
+    transition: none;
+    transform: none;
   }
+}
 
-  /* Ghost button */
-  .btn-ghost {
-    @apply px-6 py-2.5 bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10 rounded-lg transition-all duration-200 font-medium;
+/* ── Simple spinner ─────────────────────────────────────────────────────
+   Used by the loading components in place of the old animated illustration. */
+@keyframes spin-ring {
+  to {
+    transform: rotate(360deg);
   }
-
-  /* Ghost input */
-  .ghost-input {
-    @apply w-full px-4 py-3 bg-white/5 border border-white/10 text-slate-100 placeholder-slate-500/50 rounded-lg transition-all duration-200 focus:outline-none focus:border-purple-400/30 focus:bg-white/10 focus:shadow-[0_0_20px_rgba(167,139,250,0.1)];
-  }
-
-  /* Category chips */
-  .category-chip {
-    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium border transition-all duration-200;
-  }
-
-  .chip-compliment {
-    @apply bg-emerald-500/15 text-emerald-400 border-emerald-400/30 hover:bg-emerald-500/25;
-  }
-
-  .chip-confession {
-    @apply bg-red-500/15 text-red-400 border-red-400/30 hover:bg-red-500/25;
-  }
-
-  .chip-crush {
-    @apply bg-pink-500/15 text-pink-400 border-pink-400/30 hover:bg-pink-500/25;
-  }
-
-  .chip-secret {
-    @apply bg-amber-500/15 text-amber-400 border-amber-400/30 hover:bg-amber-500/25;
-  }
-
-  .chip-feedback {
-    @apply bg-blue-500/15 text-blue-400 border-blue-400/30 hover:bg-blue-500/25;
-  }
-
-  /* Scrollbar styling */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: rgba(15, 23, 42, 0.5);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: rgba(167, 139, 250, 0.5);
-    border-radius: 4px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(167, 139, 250, 0.8);
+}
+.spinner-ring {
+  animation: spin-ring 0.8s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinner-ring {
+    animation-duration: 1.6s;
   }
 }
