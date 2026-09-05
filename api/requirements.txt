@@ -1,0 +1,11 @@
+fastapi>=0.115
+uvicorn[standard]>=0.32
+python-multipart>=0.0.12
+pillow>=10.4
+numpy>=1.26
+scipy>=1.13
+torch>=2.4
+timm>=1.0.11
+
+# Auth (self-contained; no external identity provider)
+pyjwt>=2.9

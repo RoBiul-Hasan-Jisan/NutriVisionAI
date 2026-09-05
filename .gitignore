@@ -1,0 +1,45 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Root-anchored: an unanchored "data/" also matches ml/foodgenome/data/,
+# which would silently exclude the dataset loader source.
+/data/
+/artifacts/
+!/artifacts/.gitkeep
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.npy
+*.npz
+
+.env
+.env.*
+!.env.example
+
+# The self-contained database. Never commit real user data.
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+
+.DS_Store
+.idea/
+.vscode/
+
+# Working notes, kept local only
+prompt.md
+
+# Local tooling
+.claude/
