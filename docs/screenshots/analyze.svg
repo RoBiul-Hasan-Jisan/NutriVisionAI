@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1280 800" width="1280" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="800" rx="14" fill="#FFFFFF"/>
+  <clipPath id="clip-analyze"><rect width="1280" height="800" rx="14"/></clipPath>
+  <g clip-path="url(#clip-analyze)">
+    <rect width="1280" height="800" fill="#F7F8FA"/>
+
+  <rect width="1280" height="40" fill="#EAECEF"/>
+  <circle cx="24" cy="20" r="6" fill="#F04138"/>
+  <circle cx="46" cy="20" r="6" fill="#F5B400"/>
+  <circle cx="68" cy="20" r="6" fill="#2FB35C"/>
+  <rect x="480" y="10" width="320" height="20" rx="10" fill="#FFFFFF" stroke="#E4E7ED"/>
+  <text x="640" y="24" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">foodgenome.ai</text>
+
+
+  <rect x="0" y="40" width="1280" height="56" fill="#F7F8FA" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="24" y="58" width="20" height="20" rx="6" fill="#0F766E"/>
+  <text x="34" y="72" font-family="'Space Grotesk', Inter, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">F</text>
+  <text x="52" y="73" font-family="'Space Grotesk', Inter, sans-serif" font-size="16" font-weight="600" fill="#0F172A">FoodGenome<tspan fill="#0F766E">AI</tspan></text>
+  <rect x="320" y="54" width="73" height="28" rx="8" fill="#E4F2EF"/>
+  <text x="356.5" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F766E" text-anchor="middle">Analyse</text>
+  <rect x="399" y="54" width="66" height="28" rx="8" fill="none"/>
+  <text x="432.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Dishes</text>
+  <rect x="471" y="54" width="94" height="28" rx="8" fill="none"/>
+  <text x="518.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Benchmarks</text>
+  <rect x="571" y="54" width="52" height="28" rx="8" fill="none"/>
+  <text x="597.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Data</text>
+  <rect x="629" y="54" width="80" height="28" rx="8" fill="none"/>
+  <text x="669.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Pipeline</text>
+  <rect x="715" y="54" width="66" height="28" rx="8" fill="none"/>
+  <text x="748.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Method</text>
+  <rect x="1104" y="54" width="152" height="30" rx="9" fill="#0F766E"/>
+  <text x="1180" y="73" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Analyse a photo</text>
+  <text x="60" y="150" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">00 &#8212; ANALYSE A PHOTO</text>
+  <text x="60" y="184" font-family="'Space Grotesk', Inter, sans-serif" font-size="30" font-weight="600" fill="#0F172A">Upload a dish photograph</text>
+  <rect x="60" y="216" width="560" height="360" rx="16" fill="#FFFFFF" stroke="#0F766E" stroke-width="2" stroke-dasharray="8 6"/>
+  <circle cx="340" cy="330" r="34" fill="#E4F2EF"/>
+  <path d="M328 336 L340 320 L352 336 M340 320 L340 356" stroke="#0F766E" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="340" y="392" font-family="'Space Grotesk', Inter, sans-serif" font-size="17" font-weight="600" fill="#0F172A" text-anchor="middle">Drop a photo, or choose one</text>
+  <text x="340" y="416" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">JPEG or PNG · nothing is stored</text>
+  <rect x="240" y="440" width="200" height="44" rx="10" fill="#0F766E"/>
+  <text x="340" y="468" font-family="'Space Grotesk', Inter, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Choose a photo</text>
+<rect x="648" y="216" width="572" height="360" rx="16" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="676" y="252" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#0F766E" letter-spacing="1">RESULT</text>
+  <text x="676" y="296" font-family="'Space Grotesk', Inter, sans-serif" font-size="34" font-weight="600" fill="#0F172A">Baklava</text>
+  <rect x="676" y="316" width="120" height="26" rx="8" fill="#E7F6EC"/>
+  <text x="736" y="333" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#16A34A" text-anchor="middle">94.2% confident</text>
+  <line x1="676" y1="364" x2="1188" y2="364" stroke="#E4E7ED"/>
+  <text x="676" y="392" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Conformal candidates</text>
+  <text x="676" y="412" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Baklava</text>
+  <text x="1188" y="412" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#64748B" text-anchor="end">94.2%</text>
+  <text x="676" y="438" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Cannoli</text>
+  <text x="1188" y="438" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#64748B" text-anchor="end">3.1%</text>
+  <text x="676" y="464" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Tiramisu</text>
+  <text x="1188" y="464" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#64748B" text-anchor="end">1.4%</text>
+  <line x1="676" y1="494" x2="1188" y2="494" stroke="#E4E7ED"/>
+  <text x="676" y="520" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#0F172A">Per 100g</text>
+  <text x="676" y="542" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">Energy</text>
+  <text x="826" y="542" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#0F172A" text-anchor="end">428 kcal</text>
+  <text x="932" y="542" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">Protein</text>
+  <text x="1082" y="542" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#0F172A" text-anchor="end">6.1 g</text>
+  <text x="676" y="572" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">Fat</text>
+  <text x="826" y="572" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#0F172A" text-anchor="end">28 g</text>
+  <text x="932" y="572" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">Carbs</text>
+  <text x="1082" y="572" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#0F172A" text-anchor="end">40 g</text>
+
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="799" rx="14" fill="none" stroke="#E4E7ED"/>
+</svg>

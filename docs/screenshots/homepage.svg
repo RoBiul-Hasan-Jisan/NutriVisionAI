@@ -1,0 +1,82 @@
+<svg viewBox="0 0 1280 800" width="1280" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="800" rx="14" fill="#FFFFFF"/>
+  <clipPath id="clip-home"><rect width="1280" height="800" rx="14"/></clipPath>
+  <g clip-path="url(#clip-home)">
+    <rect width="1280" height="800" fill="#F7F8FA"/>
+
+  <rect width="1280" height="40" fill="#EAECEF"/>
+  <circle cx="24" cy="20" r="6" fill="#F04138"/>
+  <circle cx="46" cy="20" r="6" fill="#F5B400"/>
+  <circle cx="68" cy="20" r="6" fill="#2FB35C"/>
+  <rect x="480" y="10" width="320" height="20" rx="10" fill="#FFFFFF" stroke="#E4E7ED"/>
+  <text x="640" y="24" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">foodgenome.ai</text>
+
+
+  <rect x="0" y="40" width="1280" height="56" fill="#F7F8FA" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="24" y="58" width="20" height="20" rx="6" fill="#0F766E"/>
+  <text x="34" y="72" font-family="'Space Grotesk', Inter, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">F</text>
+  <text x="52" y="73" font-family="'Space Grotesk', Inter, sans-serif" font-size="16" font-weight="600" fill="#0F172A">FoodGenome<tspan fill="#0F766E">AI</tspan></text>
+  <rect x="320" y="54" width="73" height="28" rx="8" fill="none"/>
+  <text x="356.5" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Analyse</text>
+  <rect x="399" y="54" width="66" height="28" rx="8" fill="none"/>
+  <text x="432.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Dishes</text>
+  <rect x="471" y="54" width="94" height="28" rx="8" fill="none"/>
+  <text x="518.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Benchmarks</text>
+  <rect x="571" y="54" width="52" height="28" rx="8" fill="none"/>
+  <text x="597.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Data</text>
+  <rect x="629" y="54" width="80" height="28" rx="8" fill="none"/>
+  <text x="669.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Pipeline</text>
+  <rect x="715" y="54" width="66" height="28" rx="8" fill="none"/>
+  <text x="748.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Method</text>
+  <rect x="1104" y="54" width="152" height="30" rx="9" fill="#0F766E"/>
+  <text x="1180" y="73" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Analyse a photo</text>
+  <rect x="0" y="96" width="1280" height="360" fill="#F7F8FA" stroke="#E4E7ED"/>
+  <ellipse cx="1150" cy="140" rx="260" ry="220" fill="#E4F2EF" opacity="0.6"/>
+  <text x="60" y="180" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0F766E" letter-spacing="1.5">VISION · CONFORMAL PREDICTION · GROUNDED RETRIEVAL</text>
+  <text x="58" y="240" font-family="'Space Grotesk', Inter, sans-serif" font-size="56" font-weight="600" fill="#0F172A">Read the genome</text>
+  <text x="58" y="298" font-family="'Space Grotesk', Inter, sans-serif" font-size="56" font-weight="600" fill="#0F172A">of your plate</text>
+  <text x="60" y="344" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748B">Photograph a dish. Get the category, a calibrated confidence, the full set</text>
+  <text x="60" y="368" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748B">of candidates, and nutrition traced to the USDA record it came from.</text>
+  <rect x="60" y="392" width="190" height="48" rx="12" fill="#0F766E"/>
+  <text x="155" y="422" font-family="'Space Grotesk', Inter, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Analyse a photo</text>
+  <rect x="266" y="392" width="182" height="48" rx="12" fill="none" stroke="#E4E7ED"/>
+  <text x="357" y="422" font-family="'Space Grotesk', Inter, sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">See the evidence</text>
+<rect x="760" y="150" width="460" height="190" rx="16" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="784" y="182" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">Food-101 test split</text>
+  <text x="784" y="240" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="44" fill="#0F766E">97.16%</text>
+  <text x="784" y="266" font-family="'Space Grotesk', Inter, sans-serif" font-size="15" font-weight="600" fill="#0F172A">top-1 accuracy</text>
+  <text x="784" y="292" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">SigLIP-SO400M + EVA-02-L, averaged</text>
+  <text x="784" y="312" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">25,250 test images sealed until final eval</text>
+<rect x="760" y="356" width="220" height="92" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="782" y="388" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="26" fill="#2563EB">99.56%</text>
+  <text x="782" y="410" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">conformal coverage</text>
+<rect x="1000" y="356" width="220" height="92" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="1022" y="388" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="26" fill="#16A34A">1.54</text>
+  <text x="1022" y="410" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">avg candidate set size</text>
+  <rect x="0" y="456" width="1280" height="180" fill="#FFFFFF"/>
+<rect x="60" y="490" width="280" height="116" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="84" y="536" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="30" fill="#0F766E">101</text>
+  <text x="84" y="562" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">dish categories</text>
+<rect x="360" y="490" width="280" height="116" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="384" y="536" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="30" fill="#2563EB">32</text>
+  <text x="384" y="562" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">nutrients per dish</text>
+<rect x="660" y="490" width="280" height="116" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="684" y="536" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="30" fill="#2563EB">99.56%</text>
+  <text x="684" y="562" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">conformal coverage</text>
+<rect x="960" y="490" width="280" height="116" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="984" y="536" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="30" fill="#16A34A">97.16%</text>
+  <text x="984" y="562" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">test top-1 accuracy</text>
+  <text x="60" y="690" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">01 &#8212; HOW IT DECIDES</text>
+<rect x="60" y="706" width="380" height="78" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="80" y="732" font-family="'Space Grotesk', Inter, sans-serif" font-size="14" font-weight="600" fill="#0F172A">Two backbones, averaged</text>
+  <text x="80" y="754" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748B">SigLIP-SO400M and EVA-02-L scored, then parameter-free a</text>
+<rect x="460" y="706" width="380" height="78" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="480" y="732" font-family="'Space Grotesk', Inter, sans-serif" font-size="14" font-weight="600" fill="#0F172A">Calibrated, not confident</text>
+  <text x="480" y="754" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748B">Temperature scaling cut expected calibration error eight</text>
+<rect x="860" y="706" width="380" height="78" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="880" y="732" font-family="'Space Grotesk', Inter, sans-serif" font-size="14" font-weight="600" fill="#0F172A">It refuses to guess</text>
+  <text x="880" y="754" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748B">Out-of-scope questions are declined in under 130ms.</text>
+
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="799" rx="14" fill="none" stroke="#E4E7ED"/>
+</svg>

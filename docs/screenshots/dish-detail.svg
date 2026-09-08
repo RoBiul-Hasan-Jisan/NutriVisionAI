@@ -1,0 +1,79 @@
+<svg viewBox="0 0 1280 800" width="1280" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="800" rx="14" fill="#FFFFFF"/>
+  <clipPath id="clip-dish"><rect width="1280" height="800" rx="14"/></clipPath>
+  <g clip-path="url(#clip-dish)">
+    <rect width="1280" height="800" fill="#F7F8FA"/>
+
+  <rect width="1280" height="40" fill="#EAECEF"/>
+  <circle cx="24" cy="20" r="6" fill="#F04138"/>
+  <circle cx="46" cy="20" r="6" fill="#F5B400"/>
+  <circle cx="68" cy="20" r="6" fill="#2FB35C"/>
+  <rect x="480" y="10" width="320" height="20" rx="10" fill="#FFFFFF" stroke="#E4E7ED"/>
+  <text x="640" y="24" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">foodgenome.ai</text>
+
+
+  <rect x="0" y="40" width="1280" height="56" fill="#F7F8FA" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="24" y="58" width="20" height="20" rx="6" fill="#0F766E"/>
+  <text x="34" y="72" font-family="'Space Grotesk', Inter, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">F</text>
+  <text x="52" y="73" font-family="'Space Grotesk', Inter, sans-serif" font-size="16" font-weight="600" fill="#0F172A">FoodGenome<tspan fill="#0F766E">AI</tspan></text>
+  <rect x="320" y="54" width="73" height="28" rx="8" fill="none"/>
+  <text x="356.5" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Analyse</text>
+  <rect x="399" y="54" width="66" height="28" rx="8" fill="#E4F2EF"/>
+  <text x="432.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F766E" text-anchor="middle">Dishes</text>
+  <rect x="471" y="54" width="94" height="28" rx="8" fill="none"/>
+  <text x="518.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Benchmarks</text>
+  <rect x="571" y="54" width="52" height="28" rx="8" fill="none"/>
+  <text x="597.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Data</text>
+  <rect x="629" y="54" width="80" height="28" rx="8" fill="none"/>
+  <text x="669.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Pipeline</text>
+  <rect x="715" y="54" width="66" height="28" rx="8" fill="none"/>
+  <text x="748.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Method</text>
+  <rect x="1104" y="54" width="152" height="30" rx="9" fill="#0F766E"/>
+  <text x="1180" y="73" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Analyse a photo</text>
+  <text x="60" y="150" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">DISHES / BAKLAVA</text>
+<rect x="60" y="172" width="300" height="300" rx="18" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="61" y="173" width="298" height="298" rx="17" fill="#FCEEDC"/>
+  <text x="60" y="504" font-family="'Space Grotesk', Inter, sans-serif" font-size="34" font-weight="600" fill="#0F172A">Baklava</text>
+  <rect x="60" y="522" width="140" height="28" rx="9" fill="#E4F2EF"/>
+  <text x="130" y="541" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#0F766E" text-anchor="middle">Mediterranean</text>
+  <text x="60" y="580" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">USDA SR Legacy record · direct match</text>
+<rect x="396" y="172" width="824" height="408" rx="16" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="424" y="208" font-family="'Space Grotesk', Inter, sans-serif" font-size="16" font-weight="600" fill="#0F172A">Nutrition per 100g</text>
+  <rect x="424" y="228" width="140" height="30" rx="8" fill="#0F766E"/>
+  <text x="494" y="248" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Per 100g</text>
+  <rect x="572" y="228" width="140" height="30" rx="8" fill="none" stroke="#E4E7ED"/>
+  <text x="642" y="248" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">Per serving</text>
+  <rect x="416" y="272" width="392" height="38" fill="#F7F8FA"/>
+  <text x="424" y="292" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Energy</text>
+  <text x="800" y="292" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">428 kcal</text>
+  <rect x="828" y="272" width="392" height="38" fill="#F7F8FA"/>
+  <text x="836" y="292" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Protein</text>
+  <text x="1212" y="292" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">6.1 g</text>
+  <text x="424" y="338" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Total fat</text>
+  <text x="800" y="338" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">28 g</text>
+  <text x="836" y="338" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Saturated fat</text>
+  <text x="1212" y="338" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">10 g</text>
+  <rect x="416" y="364" width="392" height="38" fill="#F7F8FA"/>
+  <text x="424" y="384" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Carbohydrate</text>
+  <text x="800" y="384" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">40 g</text>
+  <rect x="828" y="364" width="392" height="38" fill="#F7F8FA"/>
+  <text x="836" y="384" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Sugars</text>
+  <text x="1212" y="384" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">24 g</text>
+  <text x="424" y="430" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Fiber</text>
+  <text x="800" y="430" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">1.8 g</text>
+  <text x="836" y="430" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Sodium</text>
+  <text x="1212" y="430" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">286 mg</text>
+  <rect x="416" y="456" width="392" height="38" fill="#F7F8FA"/>
+  <text x="424" y="476" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Calcium</text>
+  <text x="800" y="476" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">55 mg</text>
+  <rect x="828" y="456" width="392" height="38" fill="#F7F8FA"/>
+  <text x="836" y="476" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Iron</text>
+  <text x="1212" y="476" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">1.4 mg</text>
+  <text x="424" y="522" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Vitamin A</text>
+  <text x="800" y="522" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">28 &#181;g</text>
+  <text x="836" y="522" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Potassium</text>
+  <text x="1212" y="522" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="13" fill="#0F172A" text-anchor="end">112 mg</text>
+
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="799" rx="14" fill="none" stroke="#E4E7ED"/>
+</svg>

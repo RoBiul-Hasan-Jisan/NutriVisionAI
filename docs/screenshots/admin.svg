@@ -1,0 +1,79 @@
+<svg viewBox="0 0 1280 800" width="1280" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="800" rx="14" fill="#FFFFFF"/>
+  <clipPath id="clip-admin"><rect width="1280" height="800" rx="14"/></clipPath>
+  <g clip-path="url(#clip-admin)">
+    <rect width="1280" height="800" fill="#F7F8FA"/>
+
+  <rect width="1280" height="40" fill="#EAECEF"/>
+  <circle cx="24" cy="20" r="6" fill="#F04138"/>
+  <circle cx="46" cy="20" r="6" fill="#F5B400"/>
+  <circle cx="68" cy="20" r="6" fill="#2FB35C"/>
+  <rect x="480" y="10" width="320" height="20" rx="10" fill="#FFFFFF" stroke="#E4E7ED"/>
+  <text x="640" y="24" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">foodgenome.ai</text>
+
+  <rect x="0" y="40" width="1280" height="52" fill="#FFFFFF" stroke="#E4E7ED"/>
+  <text x="24" y="72" font-family="'Space Grotesk', Inter, sans-serif" font-size="17" font-weight="600" fill="#0F172A">Admin console</text>
+  <rect x="178" y="56" width="96" height="22" rx="11" fill="#E4F2EF"/>
+  <text x="226" y="71" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#0F766E" text-anchor="middle">LIVE METRICS</text>
+  <text x="1256" y="70" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748B" text-anchor="end">&#8592; Public site</text>
+  <rect x="0" y="92" width="208" height="708" fill="#F7F8FA" stroke="#E4E7ED"/>
+  <rect x="16" y="120" width="176" height="34" rx="9" fill="#E4F2EF"/>
+  <text x="32" y="142" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F766E">Overview</text>
+  <rect x="16" y="162" width="176" height="34" rx="9" fill="none"/>
+  <text x="32" y="184" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B">People</text>
+  <rect x="16" y="204" width="176" height="34" rx="9" fill="none"/>
+  <text x="32" y="226" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B">Model registry</text>
+  <rect x="16" y="246" width="176" height="34" rx="9" fill="none"/>
+  <text x="32" y="268" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B">Reliability</text>
+  <rect x="16" y="288" width="176" height="34" rx="9" fill="none"/>
+  <text x="32" y="310" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B">Knowledge base</text>
+<rect x="232" y="116" width="246" height="96" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="252" y="156" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="24" fill="#0F766E">1,204</text>
+  <text x="252" y="180" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">predictions today</text>
+<rect x="494" y="116" width="246" height="96" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="514" y="156" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="24" fill="#2563EB">41ms</text>
+  <text x="514" y="180" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">p50 latency</text>
+<rect x="756" y="116" width="246" height="96" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="776" y="156" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="24" fill="#D97706">312ms</text>
+  <text x="776" y="180" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">p95 latency</text>
+<rect x="1018" y="116" width="246" height="96" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="1038" y="156" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="24" fill="#16A34A">99.7%</text>
+  <text x="1038" y="180" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">uptime</text>
+<rect x="232" y="232" width="1024" height="300" rx="16" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="256" y="266" font-family="'Space Grotesk', Inter, sans-serif" font-size="15" font-weight="600" fill="#0F172A">Recent predictions</text>
+  <line x1="256" y1="314" x2="1232" y2="314" stroke="#E4E7ED"/>
+  <text x="256" y="300" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Baklava</text>
+  <text x="772" y="300" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">94.2%</text>
+  <text x="932" y="300" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">218ms</text>
+  <line x1="256" y1="360" x2="1232" y2="360" stroke="#E4E7ED"/>
+  <text x="256" y="346" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Sushi bowl</text>
+  <text x="772" y="346" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">88.6%</text>
+  <text x="932" y="346" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">201ms</text>
+  <line x1="256" y1="406" x2="1232" y2="406" stroke="#E4E7ED"/>
+  <text x="256" y="392" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Pad thai</text>
+  <text x="772" y="392" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">91.0%</text>
+  <text x="932" y="392" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">224ms</text>
+  <line x1="256" y1="452" x2="1232" y2="452" stroke="#E4E7ED"/>
+  <text x="256" y="438" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Waffles</text>
+  <text x="772" y="438" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">96.4%</text>
+  <text x="932" y="438" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">197ms</text>
+  <line x1="256" y1="498" x2="1232" y2="498" stroke="#E4E7ED"/>
+  <text x="256" y="484" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0F172A">Ceviche</text>
+  <text x="772" y="484" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">74.1%</text>
+  <text x="932" y="484" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="12" fill="#64748B">230ms</text>
+<rect x="232" y="548" width="1024" height="172" rx="16" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <text x="256" y="582" font-family="'Space Grotesk', Inter, sans-serif" font-size="15" font-weight="600" fill="#0F172A">Model registry</text>
+  <text x="256" y="608" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">SigLIP-SO400M + EVA-02-L ensemble &#8212; 97.16% test top-1, McNemar p = 0.000003</text>
+  <rect x="256" y="628" width="976" height="64" rx="10" fill="#F7F8FA"/>
+  <rect x="280" y="664" width="18.700000000000045" height="10" rx="5" fill="#94A3B8"/>
+  <text x="280" y="680" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748B">DINOv2-L 94.87%</text>
+  <rect x="530" y="664" width="25.30000000000001" height="10" rx="5" fill="#94A3B8"/>
+  <text x="530" y="680" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748B">EVA-02-L 95.53%</text>
+  <rect x="780" y="664" width="38.29999999999998" height="10" rx="5" fill="#0F766E"/>
+  <text x="780" y="680" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748B">SigLIP 96.83%</text>
+  <rect x="1030" y="664" width="41.599999999999966" height="10" rx="5" fill="#16A34A"/>
+  <text x="1030" y="680" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#64748B">Ensemble 97.16%</text>
+
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="799" rx="14" fill="none" stroke="#E4E7ED"/>
+</svg>

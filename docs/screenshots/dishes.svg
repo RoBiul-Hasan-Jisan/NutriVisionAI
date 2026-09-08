@@ -1,0 +1,92 @@
+<svg viewBox="0 0 1280 800" width="1280" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="800" rx="14" fill="#FFFFFF"/>
+  <clipPath id="clip-dishes"><rect width="1280" height="800" rx="14"/></clipPath>
+  <g clip-path="url(#clip-dishes)">
+    <rect width="1280" height="800" fill="#F7F8FA"/>
+
+  <rect width="1280" height="40" fill="#EAECEF"/>
+  <circle cx="24" cy="20" r="6" fill="#F04138"/>
+  <circle cx="46" cy="20" r="6" fill="#F5B400"/>
+  <circle cx="68" cy="20" r="6" fill="#2FB35C"/>
+  <rect x="480" y="10" width="320" height="20" rx="10" fill="#FFFFFF" stroke="#E4E7ED"/>
+  <text x="640" y="24" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">foodgenome.ai</text>
+
+
+  <rect x="0" y="40" width="1280" height="56" fill="#F7F8FA" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="24" y="58" width="20" height="20" rx="6" fill="#0F766E"/>
+  <text x="34" y="72" font-family="'Space Grotesk', Inter, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">F</text>
+  <text x="52" y="73" font-family="'Space Grotesk', Inter, sans-serif" font-size="16" font-weight="600" fill="#0F172A">FoodGenome<tspan fill="#0F766E">AI</tspan></text>
+  <rect x="320" y="54" width="73" height="28" rx="8" fill="none"/>
+  <text x="356.5" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Analyse</text>
+  <rect x="399" y="54" width="66" height="28" rx="8" fill="#E4F2EF"/>
+  <text x="432.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F766E" text-anchor="middle">Dishes</text>
+  <rect x="471" y="54" width="94" height="28" rx="8" fill="none"/>
+  <text x="518.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Benchmarks</text>
+  <rect x="571" y="54" width="52" height="28" rx="8" fill="none"/>
+  <text x="597.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Data</text>
+  <rect x="629" y="54" width="80" height="28" rx="8" fill="none"/>
+  <text x="669.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Pipeline</text>
+  <rect x="715" y="54" width="66" height="28" rx="8" fill="none"/>
+  <text x="748.0" y="72" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Method</text>
+  <rect x="1104" y="54" width="152" height="30" rx="9" fill="#0F766E"/>
+  <text x="1180" y="73" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Analyse a photo</text>
+  <text x="60" y="150" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">&#8212; EVERY DISH</text>
+  <text x="60" y="188" font-family="'Space Grotesk', Inter, sans-serif" font-size="30" font-weight="600" fill="#0F172A">All 101 dishes</text>
+  <rect x="60" y="210" width="400" height="40" rx="10" fill="#FFFFFF" stroke="#E4E7ED"/>
+  <text x="80" y="235" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#64748B">Search dishes&#8230;</text>
+  <rect x="476" y="210" width="114" height="40" rx="10" fill="#FFFFFF" stroke="#E4E7ED"/>
+  <text x="533.0" y="235" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F172A" text-anchor="middle">All cuisines</text>
+  <rect x="602" y="210" width="100" height="40" rx="10" fill="#FFFFFF" stroke="#E4E7ED"/>
+  <text x="652.0" y="235" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F172A" text-anchor="middle">Sort: name</text>
+<rect x="60" y="274" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="61" y="275" width="180" height="150" rx="13" fill="#E4F2EF"/>
+  <circle cx="151.0" cy="338" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="76" y="442" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Apple pie</text>
+<rect x="262" y="274" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="263" y="275" width="180" height="150" rx="13" fill="#E7EEFD"/>
+  <circle cx="353.0" cy="338" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="278" y="442" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Baby back ribs</text>
+<rect x="464" y="274" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="465" y="275" width="180" height="150" rx="13" fill="#FCEEDC"/>
+  <circle cx="555.0" cy="338" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="480" y="442" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Baklava</text>
+<rect x="666" y="274" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="667" y="275" width="180" height="150" rx="13" fill="#E7F6EC"/>
+  <circle cx="757.0" cy="338" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="682" y="442" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Beef tartare</text>
+<rect x="868" y="274" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="869" y="275" width="180" height="150" rx="13" fill="#E4F2EF"/>
+  <circle cx="959.0" cy="338" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="884" y="442" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Beet salad</text>
+<rect x="1070" y="274" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="1071" y="275" width="180" height="150" rx="13" fill="#E7EEFD"/>
+  <circle cx="1161.0" cy="338" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="1086" y="442" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Beignets</text>
+<rect x="60" y="472" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="61" y="473" width="180" height="150" rx="13" fill="#FCEEDC"/>
+  <circle cx="151.0" cy="536" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="76" y="640" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Bibimbap</text>
+<rect x="262" y="472" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="263" y="473" width="180" height="150" rx="13" fill="#E7F6EC"/>
+  <circle cx="353.0" cy="536" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="278" y="640" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Bread pudding</text>
+<rect x="464" y="472" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="465" y="473" width="180" height="150" rx="13" fill="#E4F2EF"/>
+  <circle cx="555.0" cy="536" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="480" y="640" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Breakfast burrito</text>
+<rect x="666" y="472" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="667" y="473" width="180" height="150" rx="13" fill="#E7EEFD"/>
+  <circle cx="757.0" cy="536" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="682" y="640" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Bruschetta</text>
+<rect x="868" y="472" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="869" y="473" width="180" height="150" rx="13" fill="#FCEEDC"/>
+  <circle cx="959.0" cy="536" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="884" y="640" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Caesar salad</text>
+<rect x="1070" y="472" width="182" height="178" rx="14" fill="#FFFFFF" stroke="#E4E7ED" stroke-width="1"/>
+  <rect x="1071" y="473" width="180" height="150" rx="13" fill="#E7F6EC"/>
+  <circle cx="1161.0" cy="536" r="20" fill="#FFFFFF" opacity="0.7"/>
+  <text x="1086" y="640" font-family="'Space Grotesk', Inter, sans-serif" font-size="13" font-weight="600" fill="#0F172A">Cannoli</text>
+
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="799" rx="14" fill="none" stroke="#E4E7ED"/>
+</svg>
